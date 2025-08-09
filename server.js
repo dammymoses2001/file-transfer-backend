@@ -7,9 +7,9 @@ const multer = require("multer");
 const app = express();
 // CORS configuration
 const allowedOrigins = [
-  "http://localhost:5173",
-  "https://your-frontend-name.vercel.app",
-  /^https:\/\/.*\.vercel\.app$/
+  "http://localhost:5173", // Local development
+  "https://file-transfer-frontend-eight.vercel.app", // Production frontend
+  /^https:\/\/.*\.vercel\.app$/ // Any Vercel subdomain for testing
 ];
 
 app.use(cors({
