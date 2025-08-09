@@ -1,0 +1,28 @@
+{
+  "name": "file-transfer-real-time-backend",
+  "version": "1.0.0",
+  "description": "Real-time file transfer backend with Socket.IO",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js",
+    "prod": "node server.js",
+    "deploy": "vercel --prod",
+    "logs": "vercel logs"
+  },
+  "keywords": ["socket.io", "file-transfer", "real-time", "nodejs"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
